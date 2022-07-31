@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>otto-vanilaJS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-row">
+        <div class="icons">
+          <div class="icon">
+            <a target="_blank" href="https://www.naver.com/">
+              <img
+                src="https://s.pstatic.net/static/www/u/2014/0328/mma_204243574.png"
+              />
+            </a>
+          </div>
+          <div class="icon">
+            <a target="_blank" href="https://nomadcoders.co/">
+              <img src="https://nomadcoders.co/m.svg" />
+            </a>
+          </div>
+          <div class="icon">
+            <a target="_blank" href="https://mail.google.com/">
+              <img
+                src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+              />
+            </a>
+          </div>
+        </div>
+        <div id="weather">
+          <span>weather</span>
+          <span>weather</span>
+        </div>
+      </div>
+      <div class="center-row-first">
+        <h2 id="clock">00:00:00</h2>
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div class="center-row-second">
+        <h2 id="ask-todo">Please Write Your To-Do List</h2>
+        <form id="todo-form">
+          <input type="text" placeholder="Write and Press Enter 👀" required />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="bottom-row">
+        <div id="quote">
+          <span></span>
+          <span class="hidden"></span>
+        </div>
+      </div>
+    </div>
+    <script src="js/greetins.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
